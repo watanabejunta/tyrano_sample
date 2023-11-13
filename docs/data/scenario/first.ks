@@ -1,46 +1,63 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="野球"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「勝利を決める一振り」[l][r]
 
-メロスは激怒した。[l][r]
+（実況）さぁ、9回裏でメロス高校が6対9で負けています。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+（実況）２アウト満塁の状態でバッターはメロスが出てきました。[l][r]
 
-(中略)[l][r]
+ (中略)[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+（実況）ついに追い込まれました。２ストライク、３ボール。次の１球で試合は決まるでしょう。[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+（メロス）ここで振れば逆転勝ち、見逃してボールでも次にエースのラメロにつながる...[l][r]
+
+[link target=*tag_sleep] → 振る[endlink][r]
+[link target=*tag_run] →見逃す [endlink][r]
 [s]
 
 *tag_sleep
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=baseball_boy.png time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+(実況)ホームラン！！[l][r]
+（実況）優勝はメロス高校！！[r]
 
-【 BAD END 】[l][cm]
+【 GOOD END 】[l][cm]
 
 [jump target=*start]
 
 *tag_run
 
-[bg storage=run.jpg time=500]
+[cm]
+
+[bg storage=baseball_shinpan_out.png time=500]
+
+（実況）メロス見逃してしまいました、ストライク！！[l][r]
+ここで試合終了！メロス高校念願の優勝を逃してしまいました。[l][r]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+[link target=*tag_dream] → 起きる[endlink][r]
+[s]
+
+*tag_dream
+
+[cm]
+
+[bg storage=sports_slump_baseball.png time=500]
+
+(メロス)あーー夢か、、練習頑張ろ (おわり)[l][r]
+
+
+[cm]
+
 
 [jump target=*start]
